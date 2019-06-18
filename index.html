@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Builder</title>
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	  
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	  <link rel="stylesheet" href="style.css" type="text/css">
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	  
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	  
+  	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	  <script>
+		  $(function() {
+
+		    $("#text-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,  
+		    	zIndex: 50,
+		    	connectToSortable: "#text-drop"
+		   
+		    });
+
+		    $( "#text-drop" ).droppable({
+
+		      accept: "#text-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label> <i class='fas fa-edit edit-icon' id='click-text' data-toggle='modal' data-target='#textModal'><b>Name </b></i></label> <input type='text' placeholder='text here' >")
+		      }
+		    });
+		  
+		  });
+
+		  $(function() {
+
+		    $("#pass-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 50
+		    });
+
+		    $( "#pass-drop" ).droppable({
+		    	accept: "#pass-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label> <i class='fas fa-edit edit-icon' id='click-pass' data-toggle='modal' data-target='#textModal'><b>Password </b></i></label> <input type='password' placeholder='password here' >")
+		  
+		      }
+		    });
+		  
+		  });
+
+		  $(function() {
+
+		    $("#email-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#email-drop" ).droppable({
+		    	accept: "#email-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		           .html("<label> <i class='fas fa-edit edit-icon' id='click-email' data-toggle='modal' data-target='#textModal'><b>Email</b></i></label> <input type='email' placeholder='email here' >")	
+		      }
+		    });
+		  });
+
+
+		  $(function() {
+
+		    $("#num-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#num-drop" ).droppable({
+		    	accept: "#num-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		           .html("<label> <i class='fas fa-edit edit-icon' id='click-num' data-toggle='modal' data-target='#textModal'><b>Number</b></i></label> <input type='number' placeholder='Number here' >")	
+		      }
+		    });
+		  });
+
+
+		   $(function() {
+
+		    $("#radio-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#radio-drop" ).droppable({
+		    	accept: "#radio-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label> <i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></label>  <span><input type='radio' name='radio-btn' value='option1'>Option 1</span>  <span><input type='radio' name='radio-btn' value='option2'>Option 2</span> ")	
+		      }
+		    });
+		  });
+
+
+
+		   $(function() {
+
+		    $("#check-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#check-drop" ).droppable({
+		    	accept: "#check-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label> <i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i> </label> <input type='checkbox' name='check1'>Option 1 <span><input type='checkbox' name='check2'>Option 2</span> ")	
+		      }
+		    });
+		  });
+
+
+		   $(function() {
+
+		    $("#submit-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#submit-drop" ).droppable({
+		    	accept: "#submit-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-submit' data-toggle='modal' data-target='#textModal'> <b>Submit </b></i> </label> <input type='submit' value='Submit Here '> ")	
+		      }
+		    });
+		  });
+
+
+		   $(function() {
+
+		    $("#reset-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#reset-drop" ).droppable({
+		    	accept: "#reset-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label> <i class='fas fa-edit edit-icon' id='click-reset' data-toggle='modal' data-target='#textModal'> <b>Reset all</b></i> </label> <input type='reset' value='Reset Here'> ")	
+		      }
+		    });
+		  });
+
+
+
+		   $(function() {
+
+		    $("#add-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#add-drop" ).droppable({
+		    	accept: "#add-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-textarea' data-toggle='modal' data-target='#textModal'><b>Textarea</b></i>  </label><br> <textarea rows='5' cols='20'></textarea>")	
+		      }
+		    });
+		  });
+
+
+
+		   $(function() {
+
+		    $("#drop-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#drop-drop" ).droppable({
+		    	accept: "#drop-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></label> <select><option>Option 1</option><option>Option 2</option><option>Option 3</option></select> ")	
+		      }
+		    });
+		  });
+
+
+
+		   $(function() {
+
+		    $("#date-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#date-drop" ).droppable({
+		    	accept: "#date-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-date' data-toggle='modal' data-target='#textModal'><b>Date </b></i> </label> <input type='date'> ")	
+		      }
+		    });
+		  });
+
+
+
+		   $(function() {
+
+		    $("#file-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#file-drop" ).droppable({
+		    	accept: "#file-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-file' data-toggle='modal' data-target='#textModal'><b>Upload Document </b></i> </label> <input type='file'> ")	
+		      }
+		    });
+		  });
+
+
+		   $(function() {
+
+		    $("#time-drag").draggable({
+		    	helper: "clone",
+		    	cursor: "move",
+		    	revert: true,
+		    	zIndex: 100
+		    });
+
+		    $( "#time-drop" ).droppable({
+		    	accept: "#time-drag",
+		      drop: function( event, ui ) {
+		        $( this )
+		          .find( "p")
+		          .html("<label><i class='fas fa-edit edit-icon' id='click-time' data-toggle='modal' data-target='#textModal'><b>Time </b></i> </label> <input type='time'> ")	
+		      }
+		    });
+		  });
+  	  </script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-sm-12 col-xs-12 side-panel">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h4 style="padding: 3px;">Choose Elements</h4>
+						<hr> 
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="text-drag">
+						<p>Textbox <span><i class="fas fa-keyboard"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="pass-drag">
+						<p>Password <span><i class="fas fa-unlock-alt"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="email-drag">
+						<p>Email <span><i class="fas fa-envelope-open-text"></i></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="num-drag">
+						<p>Number <span><i class="fas fa-sort-numeric-up"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="radio-drag">
+						<p>Radio <span><i class="fas fa-circle"></i></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="check-drag">
+						<p>Checkbox <span><i class="far fa-check-square"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="submit-drag">
+						<p>Submit <span><i class="fas fa-hand-point-right"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="reset-drag">
+						<p>Reset <span><i class="fas fa-window-restore"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="add-drag">
+						<p>TextArea <span><i class="fas fa-home"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="drop-drag">
+						<p>Dropdown <span><i class="fas fa-chevron-circle-down"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="date-drag">
+						<p>Date <span><i class="fas fa-calendar-alt"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="file-drag">
+						<p>Choose File <span><i class="fas fa-file-word"></i></span></p>
+					</div>
+					<div class="col-md-6 drag-element ui-widget-content" id="time-drag">
+						<p>Time <span><i class="fas fa-clock"></i></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 col-sm-12 col-xs-12 form-content">
+				<div class="row form-area">
+					<div class="col-md-12 text-center">
+						<h4 style="padding: 3px;">Create Form Here !!</h4>
+						<hr style="padding: 10px;"> 
+					</div>
+					<div class="col-md-12 ui-droppable" id="text-drop" >
+						<p>Drag Textbox here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="pass-drop" >
+						<p>Drag Password here </p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="email-drop" >
+						<p>Drag Email here </p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="num-drop" >
+						<p>Drag Number here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="radio-drop" >
+						<p>Drag Radio Button here </p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="check-drop" >
+						<p>Drag Checkbox here </p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="submit-drop" >
+						<p>Drag Submit button here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="reset-drop" >
+						<p>Drag Reset button here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="add-drop" >
+						<p>Drag textarea here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="drop-drop" >
+						<p>Drag Dropdown here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="date-drop" >
+						<p>Drag Date here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="file-drop" >
+						<p>Drag File upload here</p>
+						<hr style="padding: 10px;">
+					</div>
+					<div class="col-md-12 ui-droppable" id="time-drop" >
+						<p>Drag Time here</p>
+						<hr style="padding: 10px;">
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!-- Modal Editing  -->
+
+	<div class="modal fade" id="textModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div style="background-color: #fff" class="modal-header">
+                    <h4 style="color:#000;" class="modal-title">Edit Text</h4> 
+                   	<button type="button" class="close" data-dismiss="modal">&times;</button> 
+                </div>                
+                <div class="modal-body">
+                	<label>Change the text here: </label>
+                    <input type="text" name="text-new" id="builder-text" value="">
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:void(0)" class="btn btn-success" id="builder-text-save" data-dismiss="modal">Save</a>
+                    <a href="javascript:void(0)" class="btn btn-danger " data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- Script for text editing -->
+
+	<script type="text/javascript">
+		$(document).on('mouseenter', '.edit-icon', function() {
+				$(".edit-icon").on("click", function(){
+					var oldVal = $(this).text();
+					document.getElementById('builder-text').value = oldVal;
+					big_parent = $(this);
+
+					if(big_parent.attr("id") == "click-text"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-pass"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+
+					else if(big_parent.attr("id") == "click-email"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-num"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-radio"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-check"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-submit"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-reset"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-textarea"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-drop"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-date"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-file"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+
+					else if(big_parent.attr("id") == "click-time"){
+						$("#builder-text-save").on("click", function(){
+							big_parent.html($("#builder-text").val());
+						});
+					}
+				});
+		});
+
+	</script>
+
+</body>
+</html>
