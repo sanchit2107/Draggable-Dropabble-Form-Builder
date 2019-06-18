@@ -1,0 +1,44 @@
+body{
+	margin: 20px;
+}
+
+.side-panel{
+	background-color: #efefe9;
+}
+
+.drag-element > p{
+	border: 1px solid black;
+	padding: 3px;
+	text-align: center;
+}
+.form-content{
+		background-color: #e6e6e6;
+		
+}
+.drag-element{
+	padding: 3px;
+}
+.drag-element p span {
+	padding-left: 7px;
+}
+
+#form-id{
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*Form Container */
+/*.form-element input,textarea,select{
+	width: 100%;
+	margin: 0 auto;
+}*/
+
+
+
+/*Properties Change div*/
+
+/*.properties-change{
+	background-color: #f2f2f2;
+}*/
