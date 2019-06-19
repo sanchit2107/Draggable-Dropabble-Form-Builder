@@ -30,15 +30,15 @@ body{
 
 
 /*Form Container */
-/*.form-element input,textarea,select{
+.form-element input,textarea,select{
 	width: 100%;
 	margin: 0 auto;
-}*/
+}
 
 
 
 /*Properties Change div*/
 
-/*.properties-change{
+.properties-change{
 	background-color: #f2f2f2;
-}*/
+}
