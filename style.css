@@ -35,10 +35,18 @@ body{
 	margin: 0 auto;
 }
 
+.form-element{
+	padding: 10px;
+}
+
 
 
 /*Properties Change div*/
 
 .properties-change{
 	background-color: #f2f2f2;
+}
+
+.text-size, .pass-size, .email-size, .num-size, .radio-size, .check-size, .submit-size, .reset-size, .textarea-size, .drop-size, .date-size, .file-size, .time-size{
+	display: none;
 }
