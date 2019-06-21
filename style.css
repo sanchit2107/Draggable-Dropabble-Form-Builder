@@ -40,6 +40,13 @@ body{
 }
 
 
+/*Form content edit option for side functionalities*/
+
+.edit-function{
+	padding-left: 15px;
+}
+
+
 
 /*Properties Change div*/
 
@@ -49,4 +56,8 @@ body{
 
 .text-size, .pass-size, .email-size, .num-size, .radio-size, .check-size, .submit-size, .reset-size, .textarea-size, .drop-size, .date-size, .file-size, .time-size{
 	display: none;
+}
+
+.field-element{
+	padding: 10px;
 }
