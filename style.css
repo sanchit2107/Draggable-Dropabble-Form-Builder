@@ -28,6 +28,12 @@ body{
 }
 
 
+/*Sidediv making them sticky*/
+/*.sticky{
+	  position: fixed;
+	  top: 0;
+}*/
+
 
 /*Form Container */
 .form-element input,textarea,select{
