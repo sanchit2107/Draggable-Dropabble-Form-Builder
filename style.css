@@ -38,7 +38,7 @@ body{
 /*Form Container */
 .form-element input,textarea,select{
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 
 .form-element{
@@ -66,4 +66,11 @@ body{
 
 .field-element{
 	padding: 10px;
+}
+
+/*Select ADD/DELET Icons*/
+
+table td i{
+	font-size: 24px!important;
+	padding-left: 15px;
 }
