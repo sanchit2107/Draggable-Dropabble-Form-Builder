@@ -33,7 +33,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3 col-sm-12 col-xs-12 side-panel">
+			<div class="col-md-3 col-sm-12 col-xs-12 side-panel sticky">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h4 style="padding: 3px;">Choose Elements</h4>
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			</div>	
-			<div class="col-md-3 properties-change">
+			<div class="col-md-3 properties-change sticky">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h4 style="padding: 3px;">Form Properties</h4>
@@ -111,8 +111,15 @@
 										<button type='button' class='btn btn-light' id='text-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-text-place" id="text-place-change" value="">
+										<div class="form-group">
+											<label style="font-weight: 600">Change Placeholder: </label>
+											<input class='form-control' type="text" name="new-text-place" id="text-place-change" value="">
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="text-valid" id='valid-text-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-text-save">Save</a>
 									</div>
 								</div>
@@ -128,8 +135,15 @@
 										<button type='button' class='btn btn-light' id='pass-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-pass-place" id="pass-place-change" value="">
+										<div class="form-group">
+											<label style="font-weight: 600">Change Placeholder: </label>
+											<input class='form-control' type="text" name="new-pass-place" id="pass-place-change" value="">
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="pass-valid" id='valid-pass-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-pass-save">Save</a>
 									</div>
 								</div>
@@ -145,8 +159,15 @@
 										<button type='button' class='btn btn-light' id='email-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-email-place" id="email-place-change" value="">
+										<div class="form-group">
+											<label style="font-weight: 600">Change Placeholder: </label>
+											<input class='form-control' type="text" name="new-email-place" id="email-place-change" value="">
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="email-valid" id='valid-email-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-email-save">Save</a>
 									</div>
 								</div>
@@ -162,8 +183,15 @@
 										<button type='button' class='btn btn-light' id='num-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-num-place" id="num-place-change" value="">
+										<div class="form-group">
+											<label style="font-weight: 600">Change Placeholder: </label>
+											<input class='form-control' type="text" name="new-num-place" id="num-place-change" value="">
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="num-valid" id='valid-num-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-num-save">Save</a>
 									</div>
 								</div>
@@ -179,8 +207,14 @@
 										<button type='button' class='btn btn-light' id='radio-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-radio-place" id="radio-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="radio-valid" id='valid-radio-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-radio-save">Save</a>	
 									</div>
 								</div>
@@ -196,8 +230,14 @@
 										<button type='button' class='btn btn-light' id='check-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-check-place" id="check-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="check-valid" id='valid-check-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-check-save">Save</a>	
 									</div>
 								</div>
@@ -213,8 +253,14 @@
 										<button type='button' class='btn btn-light' id='submit-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-submit-place" id="submit-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="submit-valid" id='valid-submit-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-submit-save">Save</a>	
 									</div>
 								</div>
@@ -230,8 +276,14 @@
 										<button type='button' class='btn btn-light' id='reset-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-reset-place" id="reset-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="reset-valid" id='valid-reset-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-reset-save">Save</a>	
 									</div>
 								</div>
@@ -247,8 +299,15 @@
 										<button type='button' class='btn btn-light' id='textarea-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-textarea-place" id="textarea-place-change" value="">
+										<div class="form-group">
+											<label style="font-weight: 600">Change Placeholder: </label>
+											<input class='form-control' type="text" name="new-textarea-place" id="textarea-place-change" value="">
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="textarea-valid" id='valid-textarea-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-textarea-save">Save</a>	
 									</div>
 								</div>
@@ -264,8 +323,13 @@
 										<button type='button' class='btn btn-light' id='drop-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-drop-place" id="drop-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="drop-valid" id='valid-drop-change'>Mandatory
+										</div>
 										<a href="javascript:void(0)" class="btn btn-success" id="place-drop-save">Save</a>	
 									</div>
 								</div>
@@ -281,8 +345,14 @@
 										<button type='button' class='btn btn-light' id='date-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-date-place" id="date-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="date-valid" id='valid-date-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-date-save">Save</a>	
 									</div>
 								</div>
@@ -298,8 +368,14 @@
 										<button type='button' class='btn btn-light' id='file-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-file-place" id="file-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="file-valid" id='valid-file-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-file-save">Save</a>	
 									</div>
 								</div>
@@ -315,8 +391,14 @@
 										<button type='button' class='btn btn-light' id='time-large'>Large</button>
 									</div>
 									<div class="col-md-12 field-element">
-										<label style="font-weight: 600">Change Placeholder: </label>
-										<input type="text" name="new-time-place" id="time-place-change" value="">
+										<div class="form-group">
+											
+										</div>
+										<div class="form-group">
+											<label style="font-weight: 600">Validations: </label>
+											<input type="checkbox" name="time-valid" id='valid-time-change'>Mandatory
+										</div>
+										
 										<a href="javascript:void(0)" class="btn btn-success" id="place-time-save">Save</a>	
 									</div>
 								</div>
@@ -338,7 +420,7 @@
                 </div>                
                 <div class="modal-body">
                 	<label>Change the text here: </label>
-                    <input type="text" name="text-new" id="builder-text" value="">
+                    <input class='form-control' type="text" name="text-new" id="builder-text" value="">
                 </div>
                 <div class="modal-footer">
                     <a href="javascript:void(0)" class="btn btn-success" id="builder-text-save" data-dismiss="modal">Save</a>
@@ -347,7 +429,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
