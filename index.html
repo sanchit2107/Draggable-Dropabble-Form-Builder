@@ -27,6 +27,14 @@
 
   	  <script type="text/javascript" src="script.js"></script>
 
+  	  <!-- <script type="text/javascript">
+    	$(document).ready(function(){
+			$("#pass-delete").click(function(){
+				alert("Hello there !!");
+			});
+		});    
+	  </script> -->
+
 
 </head>
 <body>
@@ -208,13 +216,17 @@
 									</div>
 									<div class="col-md-12 field-element">
 										<div class="form-group">
-											
-										</div>
-										<div class="form-group">
 											<label style="font-weight: 600">Validations: </label>
 											<input type="checkbox" name="radio-valid" id='valid-radio-change'>Mandatory
 										</div>
-										
+										<div class="form-group">
+											<table id="tableradio">
+												<tr>
+													<td><label>Add Choices: </label></td>
+													<td style="color: blue;"><i class="fas fa-plus-square" id="addradiochoices" onclick="addRadio()"></i></td>
+												</tr>
+											</table>
+										</div>
 										<a href="javascript:void(0)" class="btn btn-success" id="place-radio-save">Save</a>	
 									</div>
 								</div>
@@ -231,13 +243,17 @@
 									</div>
 									<div class="col-md-12 field-element">
 										<div class="form-group">
-											
-										</div>
-										<div class="form-group">
 											<label style="font-weight: 600">Validations: </label>
 											<input type="checkbox" name="check-valid" id='valid-check-change'>Mandatory
 										</div>
-										
+										<div class="form-group">
+											<table id="tablecheck">
+												<tr>
+													<td><label>Add Choices: </label></td>
+													<td style="color: blue;"><i class="fas fa-plus-square" id="addcheckchoices" onclick="addCheck()"></i></td>
+												</tr>
+											</table>
+										</div>
 										<a href="javascript:void(0)" class="btn btn-success" id="place-check-save">Save</a>	
 									</div>
 								</div>
@@ -324,11 +340,16 @@
 									</div>
 									<div class="col-md-12 field-element">
 										<div class="form-group">
-											
-										</div>
-										<div class="form-group">
 											<label style="font-weight: 600">Validations: </label>
 											<input type="checkbox" name="drop-valid" id='valid-drop-change'>Mandatory
+										</div>
+										<div class="form-group">
+											<table id="tableselect">
+												<tr>
+													<td><label>Add Options: </label></td>
+													<td style="color: blue;"><i class="fas fa-plus-square" id="addselectoption" onclick="addSelect()"></i></td>
+												</tr>
+											</table>
 										</div>
 										<a href="javascript:void(0)" class="btn btn-success" id="place-drop-save">Save</a>	
 									</div>
@@ -429,6 +450,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 </html>

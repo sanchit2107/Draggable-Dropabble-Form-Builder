@@ -100,7 +100,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 text-element form-element' id='text-div-id'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-text' data-toggle='modal' data-target='#textModal'> <b>Name </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='text-star'><i class='fas fa-star-of-life' ></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' ><i class='fas fa-star-of-life' id='text-star'></i></span> </label>  <span title='Edit Field properties'><a href='javascript:void(0)'><i class='fas fa-user-edit edit-function'  id='text-id'></i></a></span> <input class='form-control' type='text' placeholder='text here' id='text-input' required> <button type='button' style='display: none; ' onclick='document.body.removeChild(this.parentNode)'>Delete</button> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 text-element form-element' id='text-div-id'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-text' data-toggle='modal' data-target='#textModal'> <b>Name </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='text-star'><i class='fas fa-star-of-life' ></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' ><i class='fas fa-star-of-life' id='text-star'></i></span> </label>  <span title='Edit Field properties'><a href='javascript:void(0)'><i class='fas fa-user-edit edit-function'  id='text-id'></i></a></span> <input class='form-control' type='text' placeholder='text here' id='text-input' required> </div>")
 		    	}
 		    });
 
@@ -114,7 +114,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 pass-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-pass' data-toggle='modal' data-target='#textModal'><b>Password </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='pass-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='pass-id'></i></span> <input class='form-control' type='password' placeholder='password here' id='pass-input'>  </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 pass-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-pass' data-toggle='modal' data-target='#textModal'><b>Password </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='pass-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='pass-id'></i></span> <input class='form-control' type='password' placeholder='password here' id='pass-input'> </div>")
 		    	}
 		    });
 
@@ -156,7 +156,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> <span><input type='radio' name='radio-btn' value='option1' id='radio-input-1'>Option 1</span>  <span><input type='radio' name='radio-btn' value='option2' id='radio-input-2'>Option 2</span> </div>")
+		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> <span><input type='radio' name='radio-btn' value='option1' id='radio-input'></span></div>")
 		    	}
 		    });
 
@@ -170,7 +170,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span> <input type='checkbox' name='check1' id='check-input-1'>Option 1 <span><input type='checkbox' name='check2' id='check-input-2'>Option 2</span> </div>")
+		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span> <input type='checkbox' name='check1' id='check-input'> </div>")
 		    	}
 		    });
 
@@ -226,7 +226,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <select id='drop-input' class='form-control'><option>Option 1</option><option>Option 2</option><option>Option 3</option></select> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <select id='drop-input' class='form-control'></select> </div>")
 		    	}
 		    });
 
@@ -572,9 +572,11 @@ $(document).on('mouseenter', '#drop-id', function() {
 		var oldVal = $("#text-input").attr('placeholder');
 		document.getElementById('text-place-change').value = oldVal;
 		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
+			$("#place-drop-save").on("click", function(){
+				big_parent.attr('placeholder',$("#drop-place-change").val());
 				});
+
+
 	});
 	$("#valid-drop-change").on("click",function(){		 //Mandatory one
 		$("#drop-input").attr("required", true);
@@ -930,12 +932,50 @@ $(function(){
 
 
 // Removing the Dic according to the user
-$(document).ready(function(){
-$(document).on('mouseenter', '#text-div-id', function () {
-    $(this).find(":delete-text").show();
-}).on('mouseleave', '.#text-div-id', function () {
-    $(this).find(":delete-text").hide();
-}).on('click', ':delete-text', function() {
-    $(this).parent().remove();
+// $(document).ready(function(){
+// $(document).on('mouseenter', '#text-div-id', function () {
+//     $(this).find(":delete-text").show();
+// }).on('mouseleave', '.#text-div-id', function () {
+//     $(this).find(":delete-text").hide();
+// }).on('click', ':delete-text', function() {
+//     $(this).parent().remove();
+// });
+// });
+
+// $(document).ready(function(){
+// 	$("#pass-delete").click(function(){
+// 		alert("hello");
+// 	})
+// })
+
+
+// Adding and Removing Select Option
+$(function addSelect(){
+	$("#addselectoption").click(function() {
+    $("#tableselect").append("<tr><td><input type='text' class='form-control' placeholder='Option' name='optionselect' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueselect' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteselect' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
 });
+$("body").on("click", "#deleteselect", function(e) {
+    $(this).parent().parent().remove();
+});   
+});  
+
+
+// Adding and Removing Checkbox Choices
+$(function addCheck(){
+	$("#addcheckchoices").click(function() {
+    $("#tablecheck").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optioncheck' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valuecheck' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deletecheck' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
 });
+$("body").on("click", "#deletecheck", function(e) {
+    $(this).parent().parent().remove();
+});   
+});  
+
+// Adding and Removing Radio Choices
+$(function addRadio(){
+	$("#addradiochoices").click(function() {
+    $("#tableradio").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optionradio' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueradio' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteradio' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
+});
+$("body").on("click", "#deleteradio", function(e) {
+    $(this).parent().parent().remove();
+});   
+});  
