@@ -156,7 +156,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> <span><input type='radio' name='radio-btn' value='option1' id='radio-input'></span></div>")
+		    		$(".builder-area").append("<div class='col-md-12' id='radio-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> </div>")
 		    	}
 		    });
 
@@ -170,7 +170,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span> <input type='checkbox' name='check1' id='check-input'> </div>")
+		    		$(".builder-area").append("<div class='col-md-12' id='check-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span>  </div>")
 		    	}
 		    });
 
@@ -226,7 +226,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <select id='drop-input' class='form-control'></select> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <select class='form-control'  id='drop-input' name='select-drop'> </select> </div>")
 		    	}
 		    });
 
@@ -297,13 +297,14 @@ $(document).on('mouseenter', '#text-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
+		var oldVal = $("#text-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('text-place-change').value = oldVal;
 		big_parent = $("#text-input");
 			$("#place-text-save").on("click", function(){
 				big_parent.attr('placeholder',$("#text-place-change").val());
 				});
 	});
+
 	$("#valid-text-change").on("click",function(){		 //Mandatory one
 		$("#text-input").attr("required", true);
 		$("#text-star").toggle();
@@ -329,13 +330,14 @@ $(document).on('mouseenter', '#pass-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#pass-input").attr('placeholder');
+		var oldVal = $("#pass-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('pass-place-change').value = oldVal;
 		big_parent = $("#pass-input");
 			$("#place-pass-save").on("click", function(){
 				big_parent.attr('placeholder',$("#pass-place-change").val());
 				});
 	});
+
 	$("#valid-pass-change").on("click",function(){		 //Mandatory one
 		$("#pass-input").attr("required", true);
 		$("#pass-star").toggle();
@@ -359,7 +361,7 @@ $(document).on('mouseenter', '#email-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#email-input").attr('placeholder');
+		var oldVal = $("#email-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('email-place-change').value = oldVal;
 		big_parent = $("#email-input");
 			$("#place-email-save").on("click", function(){
@@ -389,7 +391,8 @@ $(document).on('mouseenter', '#num-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#num-input").attr('placeholder');
+		var oldVal = $("#num-input").attr('placeholder');			 	// Change Placeholder
+
 		document.getElementById('num-place-change').value = oldVal;
 		big_parent = $("#num-input");
 			$("#place-num-save").on("click", function(){
@@ -402,6 +405,19 @@ $(document).on('mouseenter', '#num-id', function() {
 });
 });
 
+
+// Adding and Removing Radio Choices
+$(document).ready(function(){
+	$(function addRadio(){
+		$("#addradiochoices").click(function() {
+	    $("#tableradio").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optionradio[]' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueradio[]' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteradio' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
+		});
+		$("body").on("click", "#deleteradio", function(e) {
+		    $(this).parent().parent().remove();
+		});   
+	}); 	
+});
+ 
 
 $(document).on('mouseenter', '#radio-id', function() {
 	$("#radio-id").on("click", function(){
@@ -419,19 +435,41 @@ $(document).on('mouseenter', '#radio-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
 	});
 	$("#valid-radio-change").on("click",function(){		 //Mandatory one
 		$("#radio-input").attr("required", true);
 		$("#radio-star").toggle();
-});
+	});
+
+	$("#place-radio-save").on("click", function(){
+        var optionradio= new Array();
+        $("input[name^='optionradio']").each(function() {
+            optionradio.push($(this).val());
+        });
+        var valueradio = new Array();
+        $("input[name^='valueradio']").each(function() {
+            valueradio.push($(this).val());
+        });
+        for(var q=0; q<optionradio.length;q++){
+
+            $("#radio-input").append("<input type='radio' value='"+valueradio[q]+"'> "+optionradio[q]);
+        }
+	});
 });
 
+
+// Adding and Removing Checkbox Choices
+$(document).ready(function(){
+	$(function addCheck(){
+		$("#addcheckchoices").click(function() {
+	    $("#tablecheck").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optioncheck[]' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valuecheck[]' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deletecheck' style='padding: 2px;' ><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
+		});
+		$("body").on("click", "#deletecheck", function(e) {
+		    $(this).parent().parent().remove();
+		});   
+	});
+});
+  
 
 $(document).on('mouseenter', '#check-id', function() {
 	$("#check-id").on("click", function(){
@@ -449,17 +487,28 @@ $(document).on('mouseenter', '#check-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
+
 	});
 	$("#valid-check-change").on("click",function(){		 //Mandatory one
 		$("#check-input").attr("required", true);
 		$("#check-star").toggle();
-});
+	});
+
+	$("#place-check-save").on("click", function(){
+		var labelcheck = $("#labelcheck").val();
+        var namecheck = $("#namecheck").val();
+        var optioncheck = new Array();
+        $("input[name^='optioncheck']").each(function() {
+            optioncheck.push($(this).val());
+        });
+        var valuecheck = new Array();
+        $("input[name^='valuecheck']").each(function() {
+            valuecheck.push($(this).val());
+        });
+        for(var q=0; q<optioncheck.length;q++){
+            $("#check-input").append("<input type='checkbox' value='"+valuecheck[q]+"'> "+optioncheck[q]);
+        }
+	});	
 });
 
 
@@ -479,12 +528,6 @@ $(document).on('mouseenter', '#submit-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
 	});
 	$("#valid-submit-change").on("click",function(){		 //Mandatory one
 		$("#submit-input").attr("required", true);
@@ -509,12 +552,6 @@ $(document).on('mouseenter', '#reset-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
 	});
 	$("#valid-reset-change").on("click",function(){		 //Mandatory one
 		$("#reset-input").attr("required", true);
@@ -553,6 +590,19 @@ $(document).on('mouseenter', '#textarea-id', function() {
 });
 
 
+// Adding and Removing Select Option
+$(document).ready(function(){
+	$("#addselectoption").click(function() {
+    $("#tableselect").append("<tr><td><input type='text' class='form-control' placeholder='Option' name='optionselect[]' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueselect[]' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteselect' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
+});
+$("body").on("click", "#deleteselect", function(e) {
+    $(this).parent().parent().remove();
+});   
+});
+
+	
+
+
 $(document).on('mouseenter', '#drop-id', function() {
 	$("#drop-id").on("click", function(){
 		$(".drop-size").show();
@@ -569,19 +619,29 @@ $(document).on('mouseenter', '#drop-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-drop-save").on("click", function(){
-				big_parent.attr('placeholder',$("#drop-place-change").val());
-				});
-
-
 	});
 	$("#valid-drop-change").on("click",function(){		 //Mandatory one
 		$("#drop-input").attr("required", true);
 		$("#drop-star").toggle();
 });
+	$("#place-drop-save").on("click", function(){
+        var optionselect = new Array();
+        $("input[name^='optionselect']").each(function() {
+            optionselect.push($(this).val());
+        });
+        var valueselect = new Array();
+        $("input[name^='valueselect']").each(function() {
+            valueselect.push($(this).val());
+        });
+        var st = ""; 
+        for(var r=0; r<optionselect.length;r++){
+            st +="<option value='"+valueselect[r]+"'>"+optionselect[r]+"</option>";
+        }
+		st += "<br>";
+		
+			$("#drop-input").html('');
+			$("#drop-input").append(st);
+	});	
 });
 
 
@@ -601,12 +661,7 @@ $(document).on('mouseenter', '#date-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
+		
 	});
 	$("#valid-date-change").on("click",function(){		 //Mandatory one
 		$("#date-input").attr("required", true);
@@ -631,12 +686,6 @@ $(document).on('mouseenter', '#file-id', function() {
 		$(".date-size").hide();
 		$(".time-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
 	});
 	$("#valid-file-change").on("click",function(){		 //Mandatory one
 		$("#file-input").attr("required", true);
@@ -659,12 +708,7 @@ $(document).on('mouseenter', '#time-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 
-		var oldVal = $("#text-input").attr('placeholder');
-		document.getElementById('text-place-change').value = oldVal;
-		big_parent = $("#text-input");
-			$("#place-text-save").on("click", function(){
-				big_parent.attr('placeholder',$("#text-place-change").val());
-				});
+
 	});
 	$("#valid-time-change").on("click",function(){		 //Mandatory one
 		$("#time-input").attr("required", true);
@@ -928,54 +972,3 @@ $(function(){
 			$(".time-element").css({"width":"100%"});
 		});
 });
-
-
-
-// Removing the Dic according to the user
-// $(document).ready(function(){
-// $(document).on('mouseenter', '#text-div-id', function () {
-//     $(this).find(":delete-text").show();
-// }).on('mouseleave', '.#text-div-id', function () {
-//     $(this).find(":delete-text").hide();
-// }).on('click', ':delete-text', function() {
-//     $(this).parent().remove();
-// });
-// });
-
-// $(document).ready(function(){
-// 	$("#pass-delete").click(function(){
-// 		alert("hello");
-// 	})
-// })
-
-
-// Adding and Removing Select Option
-$(function addSelect(){
-	$("#addselectoption").click(function() {
-    $("#tableselect").append("<tr><td><input type='text' class='form-control' placeholder='Option' name='optionselect' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueselect' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteselect' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
-});
-$("body").on("click", "#deleteselect", function(e) {
-    $(this).parent().parent().remove();
-});   
-});  
-
-
-// Adding and Removing Checkbox Choices
-$(function addCheck(){
-	$("#addcheckchoices").click(function() {
-    $("#tablecheck").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optioncheck' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valuecheck' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deletecheck' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
-});
-$("body").on("click", "#deletecheck", function(e) {
-    $(this).parent().parent().remove();
-});   
-});  
-
-// Adding and Removing Radio Choices
-$(function addRadio(){
-	$("#addradiochoices").click(function() {
-    $("#tableradio").append("<tr><td><input type='text' class='form-control' placeholder='Choice' name='optionradio' style='width: 120px;'></td><td ><input type='text' class='form-control' placeholder='Value' name='valueradio' style='width: 120px;'></td><td><a href='javascript:void(0)' class='btn btn-xs btn-danger' id='deleteradio' style='padding: 2px;'><i class='fa fa-times' style='padding: 2px;'></i></a></td></tr>");
-});
-$("body").on("click", "#deleteradio", function(e) {
-    $(this).parent().parent().remove();
-});   
-});  
