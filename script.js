@@ -100,7 +100,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 text-element form-element' id='text-div-id'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-text' data-toggle='modal' data-target='#textModal'> <b>Name </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='text-star'><i class='fas fa-star-of-life' ></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' ><i class='fas fa-star-of-life' id='text-star'></i></span> </label>  <span title='Edit Field properties'><a href='javascript:void(0)'><i class='fas fa-user-edit edit-function'  id='text-id'></i></a></span> <input class='form-control' type='text' placeholder='text here' id='text-input' required> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 text-element form-element' id='text-div-id'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-text' data-toggle='modal' data-target='#textModal'> <b>Name </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='text-star'><i class='fas fa-star-of-life' ></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' ><i class='fas fa-star-of-life' id='text-star'></i></span> </label>  <span title='Edit Field properties'><a href='javascript:void(0)'><i class='fas fa-user-edit edit-function'  id='text-id'></i></a></span> <i class='far fa-trash-alt delete-text-icon'></i>  <input class='form-control' type='text' placeholder='text here' id='text-input' required> </div>")
 		    	}
 		    });
 
@@ -114,7 +114,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 pass-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-pass' data-toggle='modal' data-target='#textModal'><b>Password </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='pass-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='pass-id'></i></span> <input class='form-control' type='password' placeholder='password here' id='pass-input'> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 pass-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-pass' data-toggle='modal' data-target='#textModal'><b>Password </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='pass-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='pass-id'></i></span> <span><i class='far fa-trash-alt delete-pass-icon'></i> </span>  <input class='form-control' type='password' placeholder='password here' id='pass-input'> </div>")
 		    	}
 		    });
 
@@ -128,7 +128,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 email-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-email' data-toggle='modal' data-target='#textModal'><b>Email</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='email-star' ><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='email-id'></i></span><input class='form-control' type='email' placeholder='email here' id='email-input'> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 email-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-email' data-toggle='modal' data-target='#textModal'><b>Email</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='email-star' ><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function'  id='email-id'></i></span> <span> <i class='far fa-trash-alt delete-email-icon'></i></span>  <input class='form-control' type='email' placeholder='email here' id='email-input'> </div>")
 		    	}
 		    });
 
@@ -142,7 +142,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 num-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Number</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='num-star' ><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='num-id'></i></span> <span><input class='form-control' type='number' placeholder='Enter Number' name='number-btn' id='num-input'></span> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 num-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Number</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='num-star' ><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='num-id'></i></span>  <span> <i class='far fa-trash-alt delete-num-icon'></i></span>  <span><input class='form-control' type='number' placeholder='Enter Number' name='number-btn' id='num-input'></span> </div>")
 		    	}
 		    });
 
@@ -156,7 +156,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12' id='radio-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> </div>")
+		    		$(".builder-area").append("<div class='col-md-12' id='radio-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-radio' data-toggle='modal' data-target='#textModal'> <b>Choose one</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='radio-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='radio-id'></i></span> <span> <i class='far fa-trash-alt delete-radio-icon'></i></span>  </div>")
 		    	}
 		    });
 
@@ -170,7 +170,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='col-md-12' id='check-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span>  </div>")
+		    		$(".builder-area").append("<div class='col-md-12' id='check-input'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-check' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='check-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='check-id'></i></span> <span> <i class='far fa-trash-alt delete-check-icon'></i></span>  </div>")
 		    	}
 		    });
 
@@ -184,7 +184,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 submit-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-submit' data-toggle='modal' data-target='#textModal'> <b>Submit </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='submit-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='submit-id'></i></span> <button type='button' class='btn btn-success' id='submit-input'>Submit</button> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 submit-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-submit' data-toggle='modal' data-target='#textModal'> <b>Submit </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='submit-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='submit-id'></i></span> <span> <i class='far fa-trash-alt delete-submit-icon'></i></span>  <button type='button' class='btn btn-success' id='submit-input'>Submit</button> </div>")
 		    	}
 		    });
 
@@ -198,7 +198,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 	
-		    		$(".builder-area").append("<div class='form-group col-md-12 reset-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-reset' data-toggle='modal' data-target='#textModal'> <b>Reset all</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='reset-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='reset-id'></i></span> <button type='button' class='btn btn-danger' id='reset-input'>Reset</button> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 reset-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-reset' data-toggle='modal' data-target='#textModal'> <b>Reset all</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='reset-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='reset-id'></i></span> <span> <i class='far fa-trash-alt delete-reset-icon'></i></span> <button type='button' class='btn btn-danger' id='reset-input'>Reset</button> </div>")
 		    	}
 		    });
 
@@ -212,7 +212,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 textarea-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-textarea' data-toggle='modal' data-target='#textModal'><b>Textarea</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='textarea-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='textarea-id'></i></span> <textarea class='form-control' rows='5' cols='20' placeholder='Enter text paragraph' id='textarea-input'></textarea> </div>")	
+		    		$(".builder-area").append("<div class='form-group col-md-12 textarea-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-textarea' data-toggle='modal' data-target='#textModal'><b>Textarea</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='textarea-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='textarea-id'></i></span> <span> <i class='far fa-trash-alt delete-textarea-icon'></i></span>  <textarea class='form-control' rows='5' cols='20' placeholder='Enter text paragraph' id='textarea-input'></textarea> </div>")	
 		    	}
 		    });
 
@@ -226,7 +226,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <select class='form-control'  id='drop-input' name='select-drop'> </select> </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 drop-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-drop' data-toggle='modal' data-target='#textModal'><b>Select here</b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='drop-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='drop-id'></i></span> <span> <i class='far fa-trash-alt delete-select-icon'></i></span>  <select class='form-control'  id='drop-input' name='select-drop'> </select> </div>")
 		    	}
 		    });
 
@@ -239,7 +239,7 @@ $(function() {
 		    	stop: function(event, ui){
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
-				    		$(".builder-area").append("<div class='form-group col-md-12 date-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-date' data-toggle='modal' data-target='#textModal'><b>Date </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='date-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='date-id'></i></span> <input class='form-control' type='date' placeholder='date here' id='date-input'> </div>")
+				    		$(".builder-area").append("<div class='form-group col-md-12 date-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-date' data-toggle='modal' data-target='#textModal'><b>Date </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='date-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='date-id'></i></span> <span> <i class='far fa-trash-alt delete-date-icon'></i></span>  <input class='form-control' type='date' placeholder='date here' id='date-input'> </div>")
 		    	}
 		    });
 
@@ -253,7 +253,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 file-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-file' data-toggle='modal' data-target='#textModal'><b>Upload Document </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='file-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='file-id'></i></span> <input class='form-control' type='file' id='file-input' > </div>")
+		    		$(".builder-area").append("<div class='form-group col-md-12 file-element form-element'><label>  <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-file' data-toggle='modal' data-target='#textModal'><b>Upload Document </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='file-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='file-id'></i></span>  <span> <i class='far fa-trash-alt delete-file-icon'></i></span>  <input class='form-control' type='file' id='file-input' > </div>")
 		    	}
 		    });
 
@@ -267,7 +267,7 @@ $(function() {
 		    		$("#form-id").sortable();
 		    		$(ui.helper).replaceWith("")
 		
-		    		$(".builder-area").append("<div class='form-group col-md-12 time-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-time' data-toggle='modal' data-target='#textModal'><b>Time </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='time-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='time-id'></i></span> <input class='form-control' type='time' id='time-input'> </div>")	
+		    		$(".builder-area").append("<div class='form-group col-md-12 time-element form-element'><label> <span title='Edit Label'><i class='fas fa-edit edit-icon' id='click-time' data-toggle='modal' data-target='#textModal'><b>Time </b></i></span> <span style='color: red; font-size: 8px; display:none;' class='star' id='time-star'><i class='fas fa-star-of-life'></i></span> </label> <span title='Edit Field properties'><i class='fas fa-user-edit edit-function' id='time-id'></i></span>  <span> <i class='far fa-trash-alt delete-time-icon'></i></span>  <input class='form-control' type='time' id='time-input'> </div>")	
 		    	}
 		    });
 
@@ -296,6 +296,12 @@ $(document).on('mouseenter', '#text-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 		$(".time-size").hide();
+
+		$(".delete-text-icon").show();
+		$(".delete-text-icon").click(function(){
+				$(".delete-text-icon").parent().remove();
+				$(".text-size").hide();
+		});
 
 		var oldVal = $("#text-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('text-place-change').value = oldVal;
@@ -330,6 +336,12 @@ $(document).on('mouseenter', '#pass-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-pass-icon").show();
+		$(".delete-pass-icon").click(function(){
+				$(".delete-pass-icon").parent().parent().remove();
+				$(".pass-size").hide();
+		});
+
 		var oldVal = $("#pass-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('pass-place-change').value = oldVal;
 		big_parent = $("#pass-input");
@@ -361,6 +373,12 @@ $(document).on('mouseenter', '#email-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-email-icon").show();
+		$(".delete-email-icon").click(function(){
+				$(".delete-email-icon").parent().parent().remove();
+				$(".email-size").hide();
+		});
+
 		var oldVal = $("#email-input").attr('placeholder');			 	// Change Placeholder
 		document.getElementById('email-place-change').value = oldVal;
 		big_parent = $("#email-input");
@@ -390,6 +408,12 @@ $(document).on('mouseenter', '#num-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 		$(".time-size").hide();
+
+		$(".delete-num-icon").show();
+		$(".delete-num-pass-icon").click(function(){
+				$(".delete-num-pass-icon").parent().parent().remove();
+				$(".num-size").hide();
+		});
 
 		var oldVal = $("#num-input").attr('placeholder');			 	// Change Placeholder
 
@@ -434,6 +458,13 @@ $(document).on('mouseenter', '#radio-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 		$(".time-size").hide();
+
+
+		$(".delete-radio-icon").show();
+		$(".delete-radio-icon").click(function(){
+				$(".delete-radio-icon").parent().parent().remove();
+				$(".radio-size").hide();
+		});
 
 	});
 	$("#valid-radio-change").on("click",function(){		 //Mandatory one
@@ -487,6 +518,12 @@ $(document).on('mouseenter', '#check-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-check-icon").show();
+		$(".delete-check-icon").click(function(){
+				$(".delete-check-icon").parent().parent().remove();
+				$(".check-size").hide();
+		});
+
 
 	});
 	$("#valid-check-change").on("click",function(){		 //Mandatory one
@@ -528,6 +565,12 @@ $(document).on('mouseenter', '#submit-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-submit-icon").show();
+		$(".delete-submit-icon").click(function(){
+				$(".delete-submit-icon").parent().parent().remove();
+				$(".submit-size").hide();
+		});
+
 	});
 	$("#valid-submit-change").on("click",function(){		 //Mandatory one
 		$("#submit-input").attr("required", true);
@@ -552,6 +595,12 @@ $(document).on('mouseenter', '#reset-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-reset-icon").show();
+		$(".delete-reset-icon").click(function(){
+				$(".delete-reset-icon").parent().parent().remove();
+				$(".reset-size").hide();
+		});
+
 	});
 	$("#valid-reset-change").on("click",function(){		 //Mandatory one
 		$("#reset-input").attr("required", true);
@@ -575,6 +624,12 @@ $(document).on('mouseenter', '#textarea-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 		$(".time-size").hide();
+
+		$(".delete-textarea-icon").show();
+		$(".delete-textarea-icon").click(function(){
+				$(".delete-textarea-icon").parent().parent().remove();
+				$(".textarea-size").hide();
+		});
 
 		var oldVal = $("#textarea-input").attr('placeholder');
 		document.getElementById('textarea-place-change').value = oldVal;
@@ -619,6 +674,12 @@ $(document).on('mouseenter', '#drop-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-select-icon").show();
+		$(".delete-select-icon").click(function(){
+				$(".delete-select-icon").parent().parent().remove();
+				$(".drop-size").hide();
+		});
+
 	});
 	$("#valid-drop-change").on("click",function(){		 //Mandatory one
 		$("#drop-input").attr("required", true);
@@ -661,7 +722,11 @@ $(document).on('mouseenter', '#date-id', function() {
 		$(".file-size").hide();
 		$(".time-size").hide();
 
-		
+		$(".delete-date-icon").show();
+		$(".delete-date-icon").click(function(){
+				$(".delete-date-icon").parent().parent().remove();
+				$(".date-size").hide();
+		});
 	});
 	$("#valid-date-change").on("click",function(){		 //Mandatory one
 		$("#date-input").attr("required", true);
@@ -686,6 +751,12 @@ $(document).on('mouseenter', '#file-id', function() {
 		$(".date-size").hide();
 		$(".time-size").hide();
 
+		$(".delete-file-icon").show();
+		$(".delete-file-icon").click(function(){
+				$(".delete-file-icon").parent().parent().remove();
+				$(".file-size").hide();
+		});
+
 	});
 	$("#valid-file-change").on("click",function(){		 //Mandatory one
 		$("#file-input").attr("required", true);
@@ -708,19 +779,17 @@ $(document).on('mouseenter', '#time-id', function() {
 		$(".date-size").hide();
 		$(".file-size").hide();
 
-
+		$(".delete-time-icon").show();
+		$(".delete-time-icon").click(function(){
+				$(".delete-time-icon").parent().parent().remove();
+				$(".time-size").hide();
+		});
 	});
 	$("#valid-time-change").on("click",function(){		 //Mandatory one
 		$("#time-input").attr("required", true);
 		$("#time-star").toggle();
 });
 });
-
-
-
-
-
-
 // Change properties using Button- SMALL / MEDIUM / LARGE 
 
 $(function(){
