@@ -74,3 +74,12 @@ table td i{
 	font-size: 24px!important;
 	padding-left: 15px;
 }
+
+/*Delete a particular element*/
+
+.delete-text-icon , .delete-pass-icon , .delete-email-icon , .delete-num-icon , .delete-radio-icon , .delete-check-icon , .delete-file-icon , .delete-textarea-icon
+, .delete-time-icon , .delete-select-icon , .delete-submit-icon , .delete-reset-icon , .delete-date-icon{
+	display: none;
+	
+	float: right;
+}
